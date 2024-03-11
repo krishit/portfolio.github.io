@@ -1,0 +1,91 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+.footer{
+    padding-top: 1rem;
+    background-color:$footer;
+}
+
+.contact-box{
+    position: relative;
+
+
+    &__icon{
+        width: 4rem;
+        stroke: $primary;
+    }
+
+
+    &__info{
+        padding: 0.4rem;
+        font-weight: 600;
+
+        &--title{
+            color: $white;
+            text-decoration: none;
+            font-size: 1.5rem;
+        }
+
+        &--subtitle{
+            color: $gray-600;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+    }
+}
+
+.footer-sm{
+
+    a{
+        stroke: $white        
+    }
+    a:hover{
+        stroke: $primary;
+    }
+}
+
+
+// company info
+
+.company-list{
+    display: block;
+    list-style-type: none;
+    position: relative;
+
+    li{
+        margin-bottom: 0.5rem;
+        text-decoration: none;
+
+        a{
+            color: $white;
+            text-decoration: none;
+
+            &:hover{
+                color: $primary;
+            }
+        }
+    }
+}
+
+// copyright
+
+.footer-bottom{
+    background-color: $black;
+
+
+    &__copyright{
+        color: $gray-600;
+
+        a{
+            color: $gray-300;
+            text-decoration: none;
+        }
+        a:hover{
+            color: $primary;
+        }
+    }
+}
+
+.form-gradient{
+    background: linear-gradient(white, white) padding-box, linear-gradient(150deg, rgb(153, 38, 240) 0%, rgba(209, 34, 227, 0.95)100%) border-box;
+  }
